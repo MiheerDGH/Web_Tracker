@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Tracker</title>
+  </head>
+  <body>
+    <h1>Welcome to Your Task Tracker</h1>
+    <ul>
+      <% @tasks.each_with_index do |task, i| %>
+        <li>
+          <%= task["name"] %> - <%= task["status"] %>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
